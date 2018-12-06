@@ -1,0 +1,10 @@
+.container-fluid{
+    margin: 80px;
+    float: left;
+    height: 50px;
+    position: left;
+    
+}.container{
+    float:center;
+position: left;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/wordstyles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <title>Excel Page</title>
+    <style>
+        .container{
+            text-align: center;
+            font-family: sans-serif;
+            margin-bottom: 5%;
+            margin-top: 3%;
+            
+        }
+        .container1{
+            text-align: center;
+            
+        }
+        .container2{
+            text-align: center;
+            margin-top: 3%;
+        }
+        .perc{
+            font-size: 3.2em;
+        }
+        .overallbord{
+            padding: 1em;
+            padding-left: 10%;
+            padding-right: 10%;
+            border-style: solid;
+            border-color: white ;
+            margin: 10px 10px 10px;
+            margin-left: 10%;
+            margin-right: 10%;
+            
+        }
+        .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    padding: 14px 40px;
+    
+    
+    
+}
+.button2:hover {
+    background-color: #008CBA;}
+       
+
+    .fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}</style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="perc">Welcome to RAMS Analysis</h2>
+    </div>
+    <div class="overallbord">
+        <form method="POST" action="/excel" enctype="multipart/form-data">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="col-sm-6 col-md-4 text-center col-lg-3 mt-4 " style="max-width: 300ch;" style="max-height: 300ch;">
+                        <div class="card text-white bg-secondary mb-3 ">
+                            <div class="card-body">
+                                <h5 class="card-title">Upload Risk Assessment and Method Statement</h5>
+                                <hr class="border-dark mb-3">
+                                <p class="card-text">
+                                    <div class="file-field medium">
+                                        <div class="fileUpload btn btn-info btn-rounded waves-effect ">
+                                            <span>Browse</span>
+                                            <input type="file" name="file2" id="file1" class="upload" />
+                                        </div>
+
+
+                                    </div>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container2">
+                <input class="button button2" type="submit" value="Analyse">
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
